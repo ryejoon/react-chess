@@ -1,5 +1,6 @@
 import React from 'react';
 import ChessSquare from './ChessSquare';
+import styles from './ChessBoard.css';
 
 export default function ChessBoard() {
 

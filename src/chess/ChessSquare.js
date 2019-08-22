@@ -1,12 +1,13 @@
 import React from 'react';
+import styles from './ChessSquare.css';
 
 export default function ChessSquare(props) {
 
-    function getColor() {
-        return (props.x.charCodeAt(0) - 96 + parseInt(props.y, 10)) % 2 === 0 ? 'black' : 'white';
+    function boardTypeClass() {
+        return (props.x.charCodeAt(0) - 96 + parseInt(props.y, 10)) % 2 === 0 ? 'square-beige' : 'square-white';
     }
        
     return (
-        <span>{getColor()}</span>
+        <div className={boardTypeClass()}></div>
     );
 }
